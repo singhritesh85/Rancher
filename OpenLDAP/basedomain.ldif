@@ -1,0 +1,19 @@
+dn: dc=singhritesh85,dc=com
+objectClass: top
+objectClass: dcObject
+objectclass: organization
+o: singhritesh85.com
+dc: singhritesh85
+
+dn: cn=ldapadm,dc=singhritesh85,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+dn: ou=People,dc=singhritesh85,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=singhritesh85,dc=com
+objectClass: organizationalUnit
+ou: Group
