@@ -1,0 +1,10 @@
+azure_resource_group = "downstream-rg"
+rancher2_access_key = "token-XXXXX"
+rancher2_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+api_url = "https://rancher.singhritesh85.com"
+azure_client_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+azure_client_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+azure_subscription_id = "5XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+azure_tenant_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+azure_aks_cluster = "downstream-cluster"  ### Provide the Name of the AKS Cluster, the same name will be displayed after importing into Rancher UI.
+delaysec = 2
