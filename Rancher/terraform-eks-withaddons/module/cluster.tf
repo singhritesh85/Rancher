@@ -4,7 +4,7 @@
 resource "aws_eks_cluster" "eksdemo" {
   name     = "${var.eks_cluster}-${var.env}"
   role_arn = aws_iam_role.eksdemorole.arn
-  version = var.kubernetes_version[5] 
+  version = var.kubernetes_version[6] 
 
   vpc_config {
     subnet_ids = concat("${aws_subnet.public_subnet.*.id}", "${aws_subnet.private_subnet.*.id}")
@@ -156,7 +156,7 @@ resource "aws_eks_node_group" "eksnode" {
 #  disk_size       = var.disk_size
   ami_type        = var.ami_type[0]
   capacity_type   = var.capacity_type[0]
-  release_version = var.release_version[5] 
+  release_version = var.release_version[6] 
 
   tags = {
     Environment = var.env        ##"Dev"
