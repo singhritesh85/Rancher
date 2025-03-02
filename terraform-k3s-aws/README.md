@@ -15,6 +15,11 @@ curl -sfL https://get.k3s.io | K3S_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  
 curl -sfL https://get.k3s.io | K3S_TOKEN= XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX sh -s - agent --server https://network-loadbalancer-k3s- XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com:6443    ----------------> To be run on all the Agents
 ```
+![image](https://github.com/user-attachments/assets/b136e7d8-1d66-41de-8508-4d64582b1f00)
+
+As shown in the architecture diagram for K3S HA cluster drawn above I had taken three masters (K3S Servers) and three nodes (K3S Agents). The etcd was treated as the cluster datastore. I had used a Network LoadBalancer in front of all the three K3S Servers as shown in the diagram drawn above to provide high availability.
+
+![image](https://github.com/user-attachments/assets/8b076760-2061-458b-8b42-90000ff5b24d)
 
 ### K3S HA Cluster with PostgreSQL RDS as cluster datastore 
 ```
@@ -27,3 +32,9 @@ curl -sfL https://get.k3s.io | K3S_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 curl -sfL https://get.k3s.io | K3S_TOKEN= XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX sh -s - agent --server https://network-loadbalancer-k3s- XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com:6443    ----------------> To be run on all the Agents
 ```
 IP Address 10.XX.X.198 is the Private IP Address of first Master.
+
+![image](https://github.com/user-attachments/assets/9d78727d-79c3-45d4-8471-b75839fd4b6d)
+
+In the K3S HA (high availability) cluster configuration, each node registers with the Kubernetes API by using a fixed registration address (Network LoadBalancer). After registration, the agent nodes established a connection directly to one of the server nodes, as shown in the diagram above.
+
+![image](https://github.com/user-attachments/assets/abd6ce88-69a3-4586-a7b9-692654c145c8)
