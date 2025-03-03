@@ -6,7 +6,7 @@
 I had explained here how to create HA (high availability) RKE2 Cluster. In this cluster I used three Kubernetes Masters (RKE2 Servers) and three Kubernetes Workers/Nodes (RKE2 Agents). I used a Network LoadBalancer as a fixed registration address. The Aws Resources (EC2 Instances, Autoscaling Group, Launch Template, Security Group and LoadBalancer) which was being used in this RKE2 Cluster had been created using the terraform. The Terraform script is available in this GitHub Repository.    
 The fixed registration address had been used in front of RKE2 server nodes which allow other RKE2 nodes to register with RKE2 Cluster.
 
-![image](https://github.com/user-attachments/assets/fea63802-773f-4917-bf62-ebc9d99d4a67)
+![image](https://github.com/user-attachments/assets/f5061586-3bee-4379-8389-154dd69083b6)
 
 ### Creation of RKE2 HA Cluster  
 ```
