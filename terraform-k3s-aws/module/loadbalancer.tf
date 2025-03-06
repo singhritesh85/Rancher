@@ -1,5 +1,5 @@
 #########################################################
-### Application LoadBalancer as k3s ClusterLoadBalancer
+### Network LoadBalancer as k3s ClusterLoadBalancer
 #########################################################
 
 resource "aws_lb" "network_loadbalancer" {
