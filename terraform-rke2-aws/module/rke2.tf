@@ -32,7 +32,7 @@ ingress {
  }
 
 ingress {
-   description = "establish connection among the k3s Servers and Agents"
+   description = "establish connection among the RKE2 Servers and Agents"
    from_port   = 0
    to_port     = 0
    protocol    = "-1"
