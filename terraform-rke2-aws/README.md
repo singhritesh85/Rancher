@@ -1,4 +1,4 @@
-#### To create the Infrastructure for K3S Cluster #########
+#### To create the Infrastructure for RKE2 Cluster #########
 ```
 1. Provide the kms_key_id of your AWS Account to encrypt the EBS in terraform.tfvars.
 2. Provide Public key in user_data.sh
