@@ -1,5 +1,5 @@
 #########################################################
-### Application LoadBalancer as rke2 ClusterLoadBalancer
+### Network LoadBalancer as rke2 ClusterLoadBalancer
 #########################################################
 
 resource "aws_lb" "network_loadbalancer" {
