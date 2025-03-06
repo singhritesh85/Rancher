@@ -91,7 +91,7 @@ resource "aws_launch_template" "rke2_server_launchtemplate" {
   user_data     = filebase64("user_data.sh")
 
   block_device_mappings {
-    device_name = "/dev/xvda"
+    device_name = "/dev/sda1"
 
     ebs {
       volume_size = var.disk_size
@@ -138,7 +138,7 @@ resource "aws_launch_template" "rke2_agent_launchtemplate" {
   user_data     = filebase64("user_data.sh")
   
   block_device_mappings {
-    device_name = "/dev/xvda"
+    device_name = "/dev/sda1"
 
     ebs {
       volume_size = var.disk_size
