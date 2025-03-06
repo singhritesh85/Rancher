@@ -12,7 +12,7 @@ vpc_name = "test-vpc"
 ################# Provide Parameters for RKE2 Server and RKE2 Agent ###################
 
 instance_type = ["t3.micro", "t3.small", "t3.medium"]
-disk_size = "40"
+disk_size = "30"
 image_id = {
   "us-east-1" = "ami-0a1179631ec8933d7"
   "us-east-2" = "ami-0cb91c7de36eed2cb"       #"ami-0ef0a3b4303b17ec5"
