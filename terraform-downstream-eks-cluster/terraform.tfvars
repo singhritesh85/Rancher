@@ -1,0 +1,11 @@
+disksize = 32
+instance_type = ["t3.micro", "t3.small", "t3.medium", "t3.large"]
+k8version = ["1.29", "1.30", "1.31", "1.32"]
+desired_nodes = 3
+min_nodes = 3
+max_nodes = 3
+ec2_region = ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "me-south-1", "me-central-1", "ap-southeast-1", "ap-southeast-2", "ap-southeast-3"]
+rancher_url = "https://rancher.singhritesh85.com"
+rancher_token = "token-XXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+ec2_access_key = "XXXXXXXXXXXXXXXXXXXXXX"
+ec2_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
