@@ -68,7 +68,7 @@ token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::serv
 systemctl start rke2-agent.service
 ```
 
-Where IP Address 10.XX.X.178 is the IP Address of first RKE2 Server and network-loadbalancer-rke2-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the Network LoadBalancer which was used as a fixed registration address.
+Where nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the Internal Network LoadBalancer which was used as a fixed registration address and nlb-rke2-external-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the External Network LoadBalancer which was used to route external user’s request. 
 
 ![image](https://github.com/user-attachments/assets/94d24361-5631-4796-99c2-03d6af14d905)
 
