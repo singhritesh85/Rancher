@@ -13,7 +13,7 @@ The fixed registration address had been used in front of RKE2 server nodes which
 ===================================================================================================================
 On first master run below commands
 ===================================================================================================================
-curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.30.5+rke2r1  sh -
+curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.33.6+rke2r1  sh -
 systemctl enable rke2-server.service
 systemctl start rke2-server.service
 
@@ -37,7 +37,7 @@ cp /etc/rancher/rke2/rke2.yaml .kube/config  --------------->  Copy generated ku
 On second master and third master run below commands
 ===================================================================================================================
 
-curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.30.5+rke2r1  sh -
+curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.33.6+rke2r1  sh -
 mkdir -p /etc/rancher/rke2
 
 vim /etc/rancher/rke2/config.yaml
@@ -56,7 +56,7 @@ systemctl start rke2-server.service
 On worker nodes run below commands
 ====================================================================================================================
 
-curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.30.5+rke2r1 INSTALL_RKE2_TYPE="agent" sh -
+curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL=v1.33.6+rke2r1 INSTALL_RKE2_TYPE="agent" sh -
 systemctl enable rke2-agent.service
 mkdir -p /etc/rancher/rke2/
 
