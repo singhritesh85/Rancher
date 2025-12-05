@@ -23,7 +23,8 @@ vim /etc/rancher/rke2/config.yaml
 
 token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 tls-san:
-  - network-loadbalancer-rke2-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
+  - nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
+  - nlb-rke2-external-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
 
 systemctl restart rke2-server.service
 systemctl status rke2-server.service
@@ -41,10 +42,11 @@ mkdir -p /etc/rancher/rke2
 
 vim /etc/rancher/rke2/config.yaml
 
-server: https://10.XX.X.178:9345
+server: https://nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws:9345
 token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 tls-san:
-  - network-loadbalancer-rke2-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
+  - nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
+  - nlb-rke2-external-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com
 
 systemctl enable rke2-server.service
 systemctl start rke2-server.service
@@ -60,7 +62,7 @@ mkdir -p /etc/rancher/rke2/
 
 vim /etc/rancher/rke2/config.yaml
 
-server: https://10.XX.X.178:9345
+server: https://nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com:9345
 token: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 systemctl start rke2-agent.service
