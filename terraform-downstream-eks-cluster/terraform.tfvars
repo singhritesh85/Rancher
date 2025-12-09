@@ -1,6 +1,6 @@
 disksize = 32
 instance_type = ["t3.micro", "t3.small", "t3.medium", "t3.large"]
-k8version = ["1.29", "1.30", "1.31", "1.32"]
+k8version = ["1.29", "1.30", "1.31", "1.32", "1.33"]
 desired_nodes = 3
 min_nodes = 3
 max_nodes = 3
