@@ -14,7 +14,7 @@ resource "rancher2_cluster" "downstream_eks_cluster" {
   eks_config_v2 {
     cloud_credential_id = rancher2_cloud_credential.aws_cloud_credential.id
     region = var.ec2_region[1]
-    kubernetes_version = var.k8version[1]
+    kubernetes_version = var.k8version[4]
 #    logging_types = ["audit", "api"]
     node_groups {
       name = "downstream-nodegroup1"
