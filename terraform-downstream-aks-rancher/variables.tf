@@ -68,20 +68,20 @@ description = "Provide the CIDR Range for Subnet"
 type = list
 }
 
-variable "network_docker_bridge_cidr" {
-description = "Provide the CIDR Range for Docker Bridge"
-type = string
-}
+#variable "network_docker_bridge_cidr" {
+#description = "Provide the CIDR Range for Docker Bridge"
+#type = string
+#}
 
-variable "vnet_name" {
-description = "Provide the VNet Name"
-type = string
-}
+#variable "vnet_name" {
+#description = "Provide the VNet Name"
+#type = string
+#}
 
-variable "subnet_name" {
-description = "Provide the subnet name"
-type = string
-}
+#variable "subnet_name" {
+#description = "Provide the subnet name"
+#type = string
+#}
 
 variable "os_disk_type" {
 description = "Provide the OS Disk Type"
