@@ -32,7 +32,7 @@ resource "rancher2_cloud_credential" "azure_cloud_credentials" {
 ###}
 
 resource "rancher2_cluster" "downstream_aks_rancher" {
-  name = "mederma6" ###"downstream-aks-rancher"
+  name = "mederma" ###"downstream-aks-rancher"
   description = "Downstarem Rancher AKS Cluster created using Terraform"
   aks_config_v2 {
     imported = false
